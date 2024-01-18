@@ -54,12 +54,12 @@ typedef struct instruction_s
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
-void _push(stack_t **head, unsigned int numb);
-void _pall(stack_t **head, unsigned int numb);
-void f_pint(stack_t **head, unsigned int numb);
+void _push(stack_t **head, unsigned int count);
+void _pall(stack_t **head, unsigned int count);
+void _pint(stack_t **head, unsigned int count;
 int execute(char *content, stack_t **head, unsigned int count, FILE *file);
 void free_stack(stack_t *head);
-void f_pop(stack_t **head, unsigned int count);
+void _pop(stack_t **head, unsigned int count);
 void f_swap(stack_t **head, unsigned int count);
 void f_add(stack_t **head, unsigned int count);
 void f_nop(stack_t **head, unsigned int count);
