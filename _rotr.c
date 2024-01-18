@@ -3,8 +3,7 @@
   *_rotr - rotates stack to bottom
   *@head: stack head
   *@count: line_number
-  *Return: no return
- */
+  */
 void _rotr(stack_t **head, __attribute__((unused)) unsigned int count)
 {
 	stack_t *cpy;
