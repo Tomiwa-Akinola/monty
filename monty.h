@@ -1,3 +1,4 @@
+#define  _POSIX_C_SOURCE 200809L
 #ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
@@ -56,7 +57,7 @@ ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 void _push(stack_t **head, unsigned int count);
 void _pall(stack_t **head, unsigned int count);
-void _pint(stack_t **head, unsigned int count;
+void _pint(stack_t **head, unsigned int count);
 int exec(char *content, stack_t **head, unsigned int count, FILE *file);
 void free_stack_(stack_t *head);
 void _pop(stack_t **head, unsigned int count);
